@@ -1,7 +1,7 @@
 module main(
 	q,
 	HEX7, HEX6, HEX5, HEX4, HEX3, HEX2, HEX1, HEX0, 
-	LEDG, SW, KEY); 
+	LEDG, LEDR, SW, KEY); 
 
 	//Entradas
 	input	 [17:0] SW;
@@ -18,6 +18,7 @@ module main(
 	output [0:6] HEX1;
 	output [0:6] HEX0;
 	output [1:0] LEDG;
+	output [17:0] LEDR;
 	
 	//memoria_ram
 	//memoria_ram (address, clock, data, wren, q);
@@ -41,6 +42,20 @@ module main(
 	//Associações
 	assign LEDG[0] = SW[17]; //O sinal de SW17 deve ser o mesmo de LEDG[0]
 	
+	//Cada LED vermelho está associado à sua respectiva chave
+	assign LEDR[0] = SW[0];
+	assign LEDR[1] = SW[1];
+	assign LEDR[2] = SW[2];
+	assign LEDR[3] = SW[3];
+	assign LEDR[4] = SW[4];
+	assign LEDR[5] = SW[5];
+	assign LEDR[6] = SW[6];
+	assign LEDR[7] = SW[7];
+	assign LEDR[11] = SW[11];
+	assign LEDR[12] = SW[12];
+	assign LEDR[13] = SW[13];
+	assign LEDR[14] = SW[14];
+	assign LEDR[15] = SW[15];
 	
 	//Garantindo que os outros displays vão ficar quietos
 	DecodDisplay BLOCO7(0, 0, 0, 0, HEX3);
