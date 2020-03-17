@@ -1,0 +1,62 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do memoria_ram_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Aluno/Documents/Pratica1\ -\ Pierre_Eduardo {C:/Users/Aluno/Documents/Pratica1 - Pierre_Eduardo/memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memoria_ram
+# 
+# Top level modules:
+# 	memoria_ram
+# 
+vsim +altera -do memoria_ram_run_msim_rtl_verilog.do -l msim_transcript -gui work.memoria_ram
+# vsim +altera -do memoria_ram_run_msim_rtl_verilog.do -l msim_transcript -gui work.memoria_ram 
+# Loading work.memoria_ram
+# ** Error: (vsim-3033) C:/Users/Aluno/Documents/Pratica1 - Pierre_Eduardo/memoria.v(85): Instantiation of 'altsyncram' failed. The design unit was not found.
+# 
+#         Region: /memoria_ram
+#         Searched libraries:
+#             C:/Users/Aluno/Documents/Pratica1 - Pierre_Eduardo/simulation/modelsim/rtl_work
+# Error loading design
+vsim +altera -L altera_mf_ver -do memoria_ram_run_msim_rtl_verilog.do -l msim_transcript -gui work.memoria_ram
+# vsim +altera -L altera_mf_ver -do memoria_ram_run_msim_rtl_verilog.do -l msim_transcript -gui work.memoria_ram 
+# Loading work.memoria_ram
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# do memoria_ram_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Aluno/Documents/Pratica1\ -\ Pierre_Eduardo {C:/Users/Aluno/Documents/Pratica1 - Pierre_Eduardo/memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memoria_ram
+# 
+# Top level modules:
+# 	memoria_ram
+# 
+add wave -position insertpoint  \
+sim:/memoria_ram/address
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/memoria_ram/clock
+wave create -driver freeze -pattern constant -value 011 -range 4 0 -starttime 0ps -endtime 1000ps sim:/memoria_ram/address
+wave create -driver freeze -pattern random -initialvalue zzzzzzzz -period 50ps -random_type Uniform -seed 5 -range 7 0 -starttime 0ps -endtime 1000ps sim:/memoria_ram/data
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 250ps sim:/memoria_ram/wren
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/memoria_ram/wren
+wave modify -driver freeze -pattern constant -value 1 -starttime 250ps -endtime 500ps Edit:/memoria_ram/wren
+wave modify -driver freeze -pattern constant -value St1 -starttime 700ps -endtime 950ps Edit:/memoria_ram/wren
+add wave -position insertpoint  \
+sim:/memoria_ram/q
+run -all
+wave editwrite -file {C:/Users/Aluno/Documents/Pratica1 - Pierre_Eduardo/wave.do}

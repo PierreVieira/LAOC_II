@@ -1,0 +1,66 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Aluno\Documents\Pratica1.2 - Pierre_Eduardo\simulation\modelsim
+vDecodDisplay
+I[8dmCnCODA5KdXJLZ2czQ3
+V2oiT_AnHC1@@AU=mQV:9@2
+Z1 dC:\Users\Aluno\Documents\Pratica1.2 - Pierre_Eduardo\simulation\modelsim
+w1583607043
+8C:/Users/Aluno/Documents/Pratica1.2 - Pierre_Eduardo/DecodDisplay.v
+FC:/Users/Aluno/Documents/Pratica1.2 - Pierre_Eduardo/DecodDisplay.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@decod@display
+Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/Aluno/Documents/Pratica1.2 - Pierre_Eduardo} -O0
+!i10b 1
+!s100 [f6m_2`KRo=P>?:7z4JD<1
+!s85 0
+!s108 1583795173.386000
+!s107 C:/Users/Aluno/Documents/Pratica1.2 - Pierre_Eduardo/DecodDisplay.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Aluno/Documents/Pratica1.2 - Pierre_Eduardo|C:/Users/Aluno/Documents/Pratica1.2 - Pierre_Eduardo/DecodDisplay.v|
+!s101 -O0
+vmain
+IaR@5_bT9RG3ne1T4aYYW93
+VmTVQL2D55BfKKV[F6Il@10
+R1
+w1583758382
+8C:/Users/Aluno/Documents/Pratica1.2 - Pierre_Eduardo/main.v
+FC:/Users/Aluno/Documents/Pratica1.2 - Pierre_Eduardo/main.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ii[`aC2SS[5@WoAn8WgD>0
+!s85 0
+!s108 1583795173.496000
+!s107 C:/Users/Aluno/Documents/Pratica1.2 - Pierre_Eduardo/main.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Aluno/Documents/Pratica1.2 - Pierre_Eduardo|C:/Users/Aluno/Documents/Pratica1.2 - Pierre_Eduardo/main.v|
+!s101 -O0
+vmemoria_ram
+!i10b 1
+!s100 d2:e=Kki5GaX37;RVXSEn3
+I^ULE@mMdTN9b^E[hHJI:L3
+V[Fc6fL`AbTH;9jZ@KB:9U3
+R1
+w1583794279
+8C:/Users/Aluno/Documents/Pratica1.2 - Pierre_Eduardo/memoria_ram.v
+FC:/Users/Aluno/Documents/Pratica1.2 - Pierre_Eduardo/memoria_ram.v
+L0 39
+R2
+r1
+!s85 0
+31
+!s108 1583795173.636000
+!s107 C:/Users/Aluno/Documents/Pratica1.2 - Pierre_Eduardo/memoria_ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Aluno/Documents/Pratica1.2 - Pierre_Eduardo|C:/Users/Aluno/Documents/Pratica1.2 - Pierre_Eduardo/memoria_ram.v|
+!s101 -O0
+R3
+R4

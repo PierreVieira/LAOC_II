@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Aluno\Documents\Pratica1 - Pierre_Eduardo\simulation\modelsim
+vmemoria_ram
+!i10b 1
+!s100 5DL6TUdZZO>dkgP3UZieE2
+I;E5nX=BA5P>e_PQLcUz[13
+V[Fc6fL`AbTH;9jZ@KB:9U3
+Z1 dC:\Users\Aluno\Documents\Pratica1 - Pierre_Eduardo\simulation\modelsim
+w1583599452
+8C:/Users/Aluno/Documents/Pratica1 - Pierre_Eduardo/memoria.v
+FC:/Users/Aluno/Documents/Pratica1 - Pierre_Eduardo/memoria.v
+L0 39
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1583600429.187000
+!s107 C:/Users/Aluno/Documents/Pratica1 - Pierre_Eduardo/memoria.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Aluno/Documents/Pratica1 - Pierre_Eduardo|C:/Users/Aluno/Documents/Pratica1 - Pierre_Eduardo/memoria.v|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work {+incdir+C:/Users/Aluno/Documents/Pratica1 - Pierre_Eduardo} -O0
