@@ -1,0 +1,2 @@
+# Laboratório de Arquitetura e Organização de Computadores II
+<p>Repositório voltado às práticas de Laboratório de Arquitetura e Organização de Computadores II (2020.1), disciplina ministrada no CEFET-MG.</p>
