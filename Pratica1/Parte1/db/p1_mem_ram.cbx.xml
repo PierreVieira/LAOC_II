@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="p1_mem_ram">
+		<CBX_INST_ENTRY INSTANCE_NAME="|p1_mem_ram|memoria_ram_1_porta:BLOCO_MEMORIA_RAM|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_dlc1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,73 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do p2_mem_ram_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/pierr/Documents/dev/LOC_2/Pratica1/Parte2 {C:/Users/pierr/Documents/dev/LOC_2/Pratica1/Parte2/p2_mem_ram.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module p2_mem_ram
+# 
+# Top level modules:
+# 	p2_mem_ram
+# vlog -vlog01compat -work work +incdir+C:/Users/pierr/Documents/dev/LOC_2/Pratica1/Parte2 {C:/Users/pierr/Documents/dev/LOC_2/Pratica1/Parte2/memoria_ram_1_porta.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memoria_ram_1_porta
+# 
+# Top level modules:
+# 	memoria_ram_1_porta
+# 
+vsim +altera -do p2_mem_ram_run_msim_rtl_verilog.do -l msim_transcript -gui work.p2_mem_ram
+# vsim +altera -do p2_mem_ram_run_msim_rtl_verilog.do -l msim_transcript -gui work.p2_mem_ram 
+# Loading work.p2_mem_ram
+# Loading work.memoria_ram_1_porta
+# ** Error: (vsim-3033) C:/Users/pierr/Documents/dev/LOC_2/Pratica1/Parte2/memoria_ram_1_porta.v(85): Instantiation of 'altsyncram' failed. The design unit was not found.
+# 
+#         Region: /p2_mem_ram/BLOCO_MEMORIA_RAM
+#         Searched libraries:
+#             C:/Users/pierr/Documents/dev/LOC_2/Pratica1/Parte2/simulation/modelsim/rtl_work
+# Error loading design
+vsim +altera -L altera_mf_ver -do p2_mem_ram_run_msim_rtl_verilog.do -l msim_transcript -gui work.p2_mem_ram
+# vsim +altera -L altera_mf_ver -do p2_mem_ram_run_msim_rtl_verilog.do -l msim_transcript -gui work.p2_mem_ram 
+# Loading work.p2_mem_ram
+# Loading work.memoria_ram_1_porta
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# do p2_mem_ram_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/pierr/Documents/dev/LOC_2/Pratica1/Parte2 {C:/Users/pierr/Documents/dev/LOC_2/Pratica1/Parte2/p2_mem_ram.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module p2_mem_ram
+# 
+# Top level modules:
+# 	p2_mem_ram
+# vlog -vlog01compat -work work +incdir+C:/Users/pierr/Documents/dev/LOC_2/Pratica1/Parte2 {C:/Users/pierr/Documents/dev/LOC_2/Pratica1/Parte2/memoria_ram_1_porta.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memoria_ram_1_porta
+# 
+# Top level modules:
+# 	memoria_ram_1_porta
+# 
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/p2_mem_ram/clock
+wave create -driver freeze -pattern counter -startvalue 00000 -endvalue 111 -type Range -direction Up -period 50ps -step 1 -repeat forever -range 4 0 -starttime 0ps -endtime 1000ps sim:/p2_mem_ram/address
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 250ps sim:/p2_mem_ram/wren
+wave modify -driver freeze -pattern constant -value 1 -starttime 250ps -endtime 750ps Edit:/p2_mem_ram/wren
+wave modify -driver freeze -pattern constant -value 0 -starttime 750ps -endtime 1000ps Edit:/p2_mem_ram/wren
+wave create -driver freeze -pattern random -initialvalue zzzzzzzz -period 50ps -random_type Uniform -seed 5 -range 7 0 -starttime 0ps -endtime 1000ps sim:/p2_mem_ram/data
+add wave -position insertpoint  \
+sim:/p2_mem_ram/q
+run -all
+wave editwrite -file C:/Users/pierr/Documents/dev/LOC_2/Pratica1/Parte2/simulation/modelsim/wave.do

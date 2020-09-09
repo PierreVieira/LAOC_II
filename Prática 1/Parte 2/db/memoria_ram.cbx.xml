@@ -1,6 +1,0 @@
-<?xml version="1.0" ?>
-<LOG_ROOT>
-	<PROJECT NAME="memoria_ram">
-		<CBX_INST_ENTRY INSTANCE_NAME="|main|memoria_ram:BlOCO0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_kne1.tdf"/>
-	</PROJECT>
-</LOG_ROOT>

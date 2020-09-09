@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\pierr\Documents\dev\LOC_2\Pratica1\Parte1\simulation\modelsim
+vmemoria_ram_1_porta
+!i10b 1
+!s100 Z=A^AJg?[>Q3T2N@<I56]2
+I8]6H[mfH2J>nf:OfbNNcn0
+VD]ZOR<93Y5Hf`iehM_U7z2
+Z1 dC:\Users\pierr\Documents\dev\LOC_2\Pratica1\Parte1\simulation\modelsim
+w1598098691
+8C:/Users/pierr/Documents/dev/LOC_2/Pratica1/Parte1/memoria_ram_1_porta.v
+FC:/Users/pierr/Documents/dev/LOC_2/Pratica1/Parte1/memoria_ram_1_porta.v
+L0 39
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1599603591.166000
+!s107 C:/Users/pierr/Documents/dev/LOC_2/Pratica1/Parte1/memoria_ram_1_porta.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/pierr/Documents/dev/LOC_2/Pratica1/Parte1|C:/Users/pierr/Documents/dev/LOC_2/Pratica1/Parte1/memoria_ram_1_porta.v|
+!s101 -O0
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/pierr/Documents/dev/LOC_2/Pratica1/Parte1 -O0
+vp1_mem_ram
+IThnnW=7F_FLA9@k6z396L0
+VEioD7B2=U2PZooLE:?RhI2
+R1
+w1598098958
+8C:/Users/pierr/Documents/dev/LOC_2/Pratica1/Parte1/p1_mem_ram.v
+FC:/Users/pierr/Documents/dev/LOC_2/Pratica1/Parte1/p1_mem_ram.v
+L0 1
+R2
+r1
+31
+R3
+!i10b 1
+!s100 _abl>>O[oz[JIS<hLoeWF1
+!s85 0
+!s108 1599603590.856000
+!s107 C:/Users/pierr/Documents/dev/LOC_2/Pratica1/Parte1/p1_mem_ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/pierr/Documents/dev/LOC_2/Pratica1/Parte1|C:/Users/pierr/Documents/dev/LOC_2/Pratica1/Parte1/p1_mem_ram.v|
+!s101 -O0
+R4
